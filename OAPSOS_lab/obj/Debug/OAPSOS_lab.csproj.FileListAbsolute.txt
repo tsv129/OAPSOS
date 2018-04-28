@@ -1,0 +1,10 @@
+D:\GitHub\OAPSOS\OAPSOS_lab\bin\Debug\OAPSOS_lab.exe.config
+D:\GitHub\OAPSOS\OAPSOS_lab\bin\Debug\OAPSOS_lab.exe
+D:\GitHub\OAPSOS\OAPSOS_lab\bin\Debug\OAPSOS_lab.pdb
+D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.csprojResolveAssemblyReference.cache
+D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.Form1.resources
+D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.Properties.Resources.resources
+D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.csproj.GenerateResource.cache
+D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.csproj.CoreCompileInputs.cache
+D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.exe
+D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.pdb

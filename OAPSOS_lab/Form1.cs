@@ -14,6 +14,7 @@ namespace OAPSOS_lab
     {
         int X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, X11, X12, X13, X14, bn, sn;
         string bigN, smlN, tmpN;
+        Color col = new Color();
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -31,6 +32,7 @@ namespace OAPSOS_lab
                 for (int r=0; r < 5; r++)
                 {
                     dataGridView1[c, r].Value = String.Empty;
+                    dataGridView1[c, r].Style.BackColor = Color.White;
                 }
 
             X1 = dateTimePicker1.Value.Day;
@@ -63,7 +65,6 @@ namespace OAPSOS_lab
             smlN = textBox5.Text + textBox6.Text;
 
             Calc(0);
-            dataGridView1[3, 0].Value = bn.ToString() + '(' + sn.ToString() + ')';
 
             for (int i = 0; i < 3; i++)
             {
@@ -79,19 +80,21 @@ namespace OAPSOS_lab
 
             for (int i = 10; i < 13; i++)
             {
-                bn = 0; sn = 0;
                 if ((i == X13) || (i == X14))
                 {
                     switch (i)
                     {
                         case 10:
                             dataGridView1[0, 4].Value = "(10)";
+                            dataGridView1[0, 4].Style.BackColor = Color.Blue;
                             break;
                         case 11:
                             dataGridView1[1, 4].Value = "(11)";
+                            dataGridView1[1, 4].Style.BackColor = Color.Blue;
                             break;
                         case 12:
                             dataGridView1[2, 4].Value = "(12)";
+                            dataGridView1[2, 4].Style.BackColor = Color.Blue;
                             break;
                     }
                     dataGridView1[3, 4].Value = '(' + i.ToString() + ')';
@@ -99,8 +102,23 @@ namespace OAPSOS_lab
             }
         }
 
+        private void Colorchange(int bnum, int snum)
+        {
+            if ((bnum + snum) < 1)
+                col = Color.Red;
+            else
+            if ((bnum + snum) < 2)
+                col = Color.Yellow;
+            else
+            if ((bnum + snum) < 3)
+                col = Color.Blue;
+            else
+                col = Color.Green;
+        }
+
         private void Calc(int num)
         {
+
             char c = char.Parse(num.ToString());
             int i = 0, j = 0, k = 0;
             for (i = 0; i < bigN.Length; i++)
@@ -124,37 +142,49 @@ namespace OAPSOS_lab
                 tmpN = tmpN + ')';
             }
 
+            Colorchange(j, k);
+
             switch (num)
             {
                 case 0:
                     dataGridView1[1, 0].Value = tmpN;
+                    dataGridView1[1, 0].Style.BackColor = col;
                     break;
                 case 1:
                     dataGridView1[0, 1].Value = tmpN;
+                    dataGridView1[0, 1].Style.BackColor = col;
                     break;
                 case 2:
                     dataGridView1[1, 1].Value = tmpN;
+                    dataGridView1[1, 1].Style.BackColor = col;
                     break;
                 case 3:
                     dataGridView1[2, 1].Value = tmpN;
+                    dataGridView1[2, 1].Style.BackColor = col;
                     break;
                 case 4:
                     dataGridView1[0, 2].Value = tmpN;
+                    dataGridView1[0, 2].Style.BackColor = col;
                     break;
                 case 5:
                     dataGridView1[1, 2].Value = tmpN;
+                    dataGridView1[1, 2].Style.BackColor = col;
                     break;
                 case 6:
                     dataGridView1[2, 2].Value = tmpN;
+                    dataGridView1[2, 2].Style.BackColor = col;
                     break;
                 case 7:
                     dataGridView1[0, 3].Value = tmpN;
+                    dataGridView1[0, 3].Style.BackColor = col;
                     break;
                 case 8:
                     dataGridView1[1, 3].Value = tmpN;
+                    dataGridView1[1, 3].Style.BackColor = col;
                     break;
                 case 9:
                     dataGridView1[2, 3].Value = tmpN;
+                    dataGridView1[2, 3].Style.BackColor = col;
                     break;
             }
             tmpN = String.Empty;

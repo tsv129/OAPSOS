@@ -8,3 +8,4 @@ D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.csproj.GenerateResource.cache
 D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.csproj.CoreCompileInputs.cache
 D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.exe
 D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.pdb
+D:\GitHub\OAPSOS\OAPSOS_lab\obj\Debug\OAPSOS_lab.Form2.resources
